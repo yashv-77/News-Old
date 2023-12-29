@@ -1,0 +1,15 @@
+:root{
+    --theme-black-bg:#1a252e;
+    --theme-black-nav:#0E1217
+}
+
+
+body{
+    background: var(--theme-black-bg);
+}
+nav{
+    background-color: var(--theme-black-nav);
+}
+.nav-links ul{
+    color: rgb(255, 255, 255);
+}

@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  background: #1a252e;
+}
+
+.flex {
+  /* Utility Class*/
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  /* Utility Class*/
+  max-width: 1100px;
+  margin-inline: auto;
+  overflow: hidden;
+}
+
+nav {
+  background-color: rgb(235, 245, 255);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6431372549);
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+nav .main-nav {
+  padding: 8px 0;
+  justify-content: space-evenly;
+}
+nav .main-nav a {
+  text-decoration: none;
+}
+nav .main-nav a img {
+  width: 70px;
+}
+nav .main-nav ul {
+  gap: 16px; /* used with flexbox*/
+  font-size: 19px;
+  color: rgb(0, 0, 0);
+  letter-spacing: 0.5px;
+}
+nav .main-nav ul .hover-link {
+  cursor: pointer;
+}
+nav .main-nav ul .hover-link .hover-link:hover {
+  color: rgb(236, 0, 0);
+}
+nav .main-nav ul .hover-link .hover-link:active {
+  color: rgb(124, 0, 0);
+}
+
+.wide {
+  /* max-width: 1370px; */
+  margin-inline: auto;
+  overflow: hidden;
+}
+
+.search-bar {
+  gap: 12px;
+  height: 35px;
+}
+.search-bar .news-input {
+  width: 250px;
+  height: 100%;
+  padding-inline: 10px;
+  border-radius: 6px;
+  border: 1px solid;
+  font-family: var("Poppins", sans-serif);
+}
+.search-bar .search-btn {
+  background-color: rgb(236, 0, 0);
+  color: white;
+  padding: 7px 18px;
+  border: none;
+  font-family: "Oswald", sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.search-bar .search-btn .search-btn:hover {
+  background-color: rgb(124, 0, 0);
+}
+
+main {
+  margin-top: 130px;
+}
+
+.card-container {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  align-items: start;
+  padding-top: 5px;
+}
+.card-container .card {
+  width: 360px;
+  background-color: rgba(232, 237, 243, 0.7294117647);
+  border: 1px solid rgba(82, 88, 102, 0.4);
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  min-height: 360px;
+  transition: transform 0.4s ease-in-out;
+}
+.card-container .card .card-header img {
+  object-fit: cover;
+  width: 100%;
+  height: 180px;
+}
+.card-container .card .card-content {
+  padding: 12px;
+}
+.card-container .card .card-content h3 {
+  letter-spacing: 0.5px;
+}
+.card-container .card .card-content p {
+  font-family: var("Poppins", sans-serif);
+  line-height: 1.4rem;
+}
+.card-container .card:hover {
+  background-color: rgb(253, 243, 243);
+  transition: 0.4s;
+  transform: translateY(-5px);
+  border: 1px solid #525866;
+}
+
+/*# sourceMappingURL=main-style.css.map */

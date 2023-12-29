@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro NEWS</title>
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/main-style.css">
+    <!-- <link rel="stylesheet" href="css/style-dark.css" id="dark-theme-css"> -->
+    <link rel="stylesheet" href="css/btn.css">
+    
+</head>
+<body>
+    <nav>
+        <div class="main-nav wide flex">
+            <a class="comp-logo" href="#">
+                <img src="img/logo.jpg" alt="logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item">Home</li>
+                    <li class="hover-link nav-item" onclick="navItemClick('Finance')">Finance</li>
+                    <li class="hover-link nav-item" onclick="navItemClick('Politics')">Politics</li>
+                    <li class="hover-link nav-item" onclick="navItemClick('Education')">Education</li>
+                    <li class="hover-link nav-item" onclick="navItemClick('Entertaintment')">Entertaintment</li>
+                    <li class="hover-link nav-item" onclick="navItemClick('Technology')">Technology</li>
+                    <li class="hover-link nav-item" onclick="navItemClick('Trends')">Trends</li>
+                    <li class="hover-link nav-item">More</li>
+                </ul>
+            </div>
+           
+           
+           
+            <div class="search-bar flex">
+                <input type="text" id="search-text" class="news-input" placeholder="Search Topics">
+                <button class="search-btn" id="search-btn">SEARCH</button>
+                
+                <div class="toggle-switch" >
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox" class="tg-switch-outer">
+                        <span class="toggle-ball"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+
+    <main>
+        <div class="card-container container flex" id="card-container">
+            <!-- <div class="card">
+                <div class="card-header">
+                    <img src="http://via.placeholder.com/400x200" alt="news-image" id="news-image">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">This is Heading</h3>
+                    <h5 class="news-source" id="news-source">Source 15/9/2023</h5>
+                    <p class="news-desc" id="news-desc">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe est facilis qui ipsum, ut laudantium aperiam voluptate doloremque totam. In!
+                    </p>
+                </div>
+            </div>
+           
+            <div class="card">
+                <div class="card-header">
+                    <img src="http://via.placeholder.com/400x200" alt="news-image" id="news-image">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">This is Heading</h3>
+                    <h5 class="news-source" id="news-source">Source 15/9/2023</h5>
+                    <p class="news-desc" id="news-desc">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe est facilis qui ipsum, ut laudantium aperiam voluptate doloremque totam. In!
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <img src="http://via.placeholder.com/400x200" alt="news-image" id="news-image">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">This is Heading</h3>
+                    <h5 class="news-source" id="news-source">Source 15/9/2023</h5>
+                    <p class="news-desc" id="news-desc">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe est facilis qui ipsum, ut laudantium aperiam voluptate doloremque totam. In!
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <img src="http://via.placeholder.com/400x200" alt="news-image" id="news-image">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">This is Heading</h3>
+                    <h5 class="news-source" id="news-source">Source 15/9/2023</h5>
+                    <p class="news-desc" id="news-desc">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe est facilis qui ipsum, ut laudantium aperiam voluptate doloremque totam. In!
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <img src="http://via.placeholder.com/400x200" alt="news-image" id="news-image">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">This is Heading</h3>
+                    <h5 class="news-source" id="news-source">Source 15/9/2023</h5>
+                    <p class="news-desc" id="news-desc">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe est facilis qui ipsum, ut laudantium aperiam voluptate doloremque totam. In!
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <img src="http://via.placeholder.com/400x200" alt="news-image" id="news-image">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">This is Heading</h3>
+                    <h5 class="news-source" id="news-source">Source 15/9/2023</h5>
+                    <p class="news-desc" id="news-desc">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe est facilis qui ipsum, ut laudantium aperiam voluptate doloremque totam. In!
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <img src="http://via.placeholder.com/400x200" alt="news-image" id="news-image">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">This is Heading</h3>
+                    <h5 class="news-source" id="news-source">Source 15/9/2023</h5>
+                    <p class="news-desc" id="news-desc">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe est facilis qui ipsum, ut laudantium aperiam voluptate doloremque totam. In!
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <img src="http://via.placeholder.com/400x200" alt="news-image" id="news-image">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">This is Heading</h3>
+                    <h5 class="news-source" id="news-source">Source 15/9/2023</h5>
+                    <p class="news-desc" id="news-desc">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe est facilis qui ipsum, ut laudantium aperiam voluptate doloremque totam. In!
+                    </p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <img src="http://via.placeholder.com/400x200" alt="news-image" id="news-image">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">This is Heading</h3>
+                    <h5 class="news-source" id="news-source">Source 15/9/2023</h5>
+                    <p class="news-desc" id="news-desc">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe est facilis qui ipsum, ut laudantium aperiam voluptate doloremque totam. In!
+                    </p>
+                </div>
+            </div> -->
+        
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="http://via.placeholder.com/400x200" alt="news-image" id="news-image">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is Heading</h3>
+                <h5 class="news-source" id="news-source">Source 15/9/2023</h5>
+                <p class="news-desc" id="news-desc">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe est facilis qui ipsum, ut laudantium aperiam voluptate doloremque totam. In!
+                </p>
+            </div>
+        </div>
+    </template>
+
+    <script src="scriptyt.js"></script>
+</body>
+</html>
